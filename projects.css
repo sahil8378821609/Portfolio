@@ -1,0 +1,126 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #ffffff, #440375);
+}
+
+/* Projects Section */
+.projects-section {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #6583fb, #32085f);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    margin: 30px auto;
+    max-width: 1200px;
+}
+
+.projects-section h2 {
+    font-size: 2.8rem;
+    color: rgb(231, 231, 231);
+    margin-bottom: 25px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Projects Container */
+.projects-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+/* Project Card */
+.project-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    width: 320px;
+    text-align: center;
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+    overflow: hidden;
+    position: relative;
+}
+
+.project-card:hover {
+    transform: scale(1.07);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Project Image */
+.project-card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover img {
+    transform: scale(1.05);
+}
+
+/* Project Title */
+.project-card h3 {
+    font-size: 1.7rem;
+    margin: 15px 0;
+    color: rgb(136, 97, 33);
+}
+
+/* Project Description */
+.project-card p {
+    font-size: 1rem;
+    color: #555;
+    padding: 0 10px;
+}
+
+/* Project Links */
+.project-links {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.project-links a {
+    text-decoration: none;
+    color: white;
+    background: rgb(184, 133, 52);
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project-links a:hover {
+    background: white;
+    color: rgb(143, 100, 29);
+    border: 2px solid rgb(109, 67, 0);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3);
+}
+
+.project-links i {
+    font-size: 1.3rem;
+    margin-left: 8px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .projects-section {
+        padding: 40px 15px;
+        border-radius: 10px;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-card {
+        width: 90%;
+    }
+}

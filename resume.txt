@@ -1,0 +1,11 @@
+<script>
+    document.querySelector(".btn button").addEventListener("click", function() {
+        // Create an invisible anchor element
+        let downloadLink = document.createElement("a");
+        downloadLink.href = "assets/resume.pdf"; // Change this to your actual resume file path
+        downloadLink.download = "Sahil_Shendkar_Resume.pdf"; // Name of the downloaded file
+        document.body.appendChild(downloadLink);
+        downloadLink.click();
+        document.body.removeChild(downloadLink);
+    });
+</script>
